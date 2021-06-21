@@ -1,6 +1,6 @@
 // user.model.ts
 import { Column, Model, Table, DataType, HasMany } from 'sequelize-typescript';
-import { CategoryModel } from 'src/categorys/category.model';
+import { CategoryModel } from '../categorys/category.model';
 
 @Table({
     tableName: 'store',
