@@ -1,9 +1,9 @@
 
 
-import { Body, Controller, Get, Post, Delete, Param, Patch, Put } from '@nestjs/common';
+import { Body, Controller, Get, Post, Delete, Param, Patch, Put, UsePipes, ValidationPipe } from '@nestjs/common';
 import { StoresService } from './stores.service';
 import { CreateStoreDto } from './dto/createStore.dto';
-import { ApiOperation } from '@nestjs/swagger';
+import { ApiBadRequestResponse, ApiOperation } from '@nestjs/swagger';
 
 import {
     ApiCreatedResponse,
